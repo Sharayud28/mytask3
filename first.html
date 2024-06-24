@@ -1,1 +1,31 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Page</title>
+    <script>
+        function login() {
+            const username = document.getElementById('uname').value;
+            const password = document.getElementById('psw').value;
+
+            // Add your login logic here (e.g., check credentials, redirect, etc.)
+            // For now, let's just log the input values:
+            console.log('Username:', username);
+            console.log('Password:', password);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="psw" required>
+
+        <button onclick="login()">Login</button>
+    </div>
+</body>
+</html>
